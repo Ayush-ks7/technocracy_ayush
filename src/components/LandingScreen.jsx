@@ -1,5 +1,6 @@
 import React from 'react';
 import { soundEngine } from '../utils/soundEngine';
+import bgImage from '../assets/images.png';
 
 export default function LandingScreen({ onEnter, isHidden }) {
   const handleEnterClick = () => {
@@ -12,7 +13,7 @@ export default function LandingScreen({ onEnter, isHidden }) {
   return (
     <div id="landing-screen" className={isHidden ? 'hidden' : ''}>
       <div className="landing-bg-wrapper">
-        <img src="/images.png" alt="Ancient Pagoda Architecture - Technocracy" className="landing-bg-image" />
+        <img src={bgImage} alt="Ancient Pagoda Architecture - Technocracy" className="landing-bg-image" />
         <div className="landing-vignette"></div>
       </div>
 
