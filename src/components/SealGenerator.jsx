@@ -83,8 +83,8 @@ export default function SealGenerator() {
       <div className="seal-gen-card">
         <div className="seal-preview-box">
           <canvas ref={canvasRef} id="sealCanvas" />
-          <button 
-            id="download-seal-btn" 
+          <button
+            id="download-seal-btn"
             className="btn-primary interactive"
             onClick={handleDownload}
             style={{ fontSize: '0.85rem', padding: '0.7rem 1.8rem' }}
@@ -99,16 +99,16 @@ export default function SealGenerator() {
             Imperial Seal Generator (篆刻)
           </h3>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-            Inscribe your name or department monogram onto a traditional square seal with ornamental borders. 
+            Inscribe your name or department monogram onto a traditional square seal with ornamental borders.
             Generate your verified Technocracy NIT Raipur credentials badge.
           </p>
 
           <div className="input-group">
             <label htmlFor="seal-name-input">INSCRIPTION CHARACTERS (UP TO 4 CHARACTERS)</label>
-            <input 
-              type="text" 
-              id="seal-name-input" 
-              className="input-field interactive" 
+            <input
+              type="text"
+              id="seal-name-input"
+              className="input-field interactive"
               value={sealName}
               maxLength={4}
               onChange={(e) => {
@@ -121,8 +121,8 @@ export default function SealGenerator() {
 
           <div className="input-group">
             <label htmlFor="seal-style-select">SEAL INK POLARITY STYLE</label>
-            <select 
-              id="seal-style-select" 
+            <select
+              id="seal-style-select"
               className="input-field interactive"
               value={sealStyle}
               onChange={(e) => {

@@ -225,7 +225,7 @@ export default function BaguaTimelineCombined() {
   return (
     <section id="bagua-timeline" className="bagua-timeline-side-by-side-section" ref={sectionRef}>
       <div className="timeline-side-by-side-container">
-        
+
         {/* LEFT COLUMN: THE ROTATING BAGUA CIRCLE & ACTIVE DETAILS */}
         <div className="timeline-left-col">
           <div className="timeline-left-header">
@@ -240,21 +240,21 @@ export default function BaguaTimelineCombined() {
           <div className="bagua-side-wheel-wrap">
             <div className="bagua-side-outer-ring"></div>
             <div className="bagua-side-inner-ring"></div>
-            <div 
-              ref={wheelRef} 
+            <div
+              ref={wheelRef}
               className="bagua-side-wheel"
             >
               {/* Center Taijitu Core */}
-              <div 
-                className="bagua-side-core interactive" 
+              <div
+                className="bagua-side-core interactive"
                 title="Central Taijitu Core"
                 onClick={() => soundEngine.playZenGong()}
               >
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
-                  <circle cx="50" cy="50" r="48" fill="#000000" stroke="#ffffff" strokeWidth="2"/>
-                  <path d="M50 2 A48 48 0 0 1 50 98 A24 24 0 0 1 50 50 A24 24 0 0 0 50 2" fill="#ffffff"/>
-                  <circle cx="50" cy="26" r="7" fill="#000000"/>
-                  <circle cx="50" cy="74" r="7" fill="#ffffff"/>
+                  <circle cx="50" cy="50" r="48" fill="#000000" stroke="#ffffff" strokeWidth="2" />
+                  <path d="M50 2 A48 48 0 0 1 50 98 A24 24 0 0 1 50 50 A24 24 0 0 0 50 2" fill="#ffffff" />
+                  <circle cx="50" cy="26" r="7" fill="#000000" />
+                  <circle cx="50" cy="74" r="7" fill="#ffffff" />
                 </svg>
               </div>
 
@@ -312,7 +312,7 @@ export default function BaguaTimelineCombined() {
               const isActive = activeIdx === idx;
               return (
                 <div key={item.id} className="timeline-side-card">
-                  <div 
+                  <div
                     className={`timeline-card-inner interactive ${isActive ? 'active-border' : ''}`}
                     onClick={() => handleTrigramNodeClick(idx)}
                   >

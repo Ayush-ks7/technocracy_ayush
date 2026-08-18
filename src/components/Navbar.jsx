@@ -61,10 +61,10 @@ export default function Navbar({ soundEnabled, onToggleSound, onNavigate }) {
         <a href="#hero" className="nav-brand interactive" onClick={(e) => handleLinkClick(e, '#hero')}>
           <div className="nav-logo-icon">
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-              <circle cx="50" cy="50" r="48" fill="#000000" stroke="#ffffff" strokeWidth="2"/>
-              <path d="M50 2 A48 48 0 0 1 50 98 A24 24 0 0 1 50 50 A24 24 0 0 0 50 2" fill="#ffffff"/>
-              <circle cx="50" cy="26" r="7" fill="#000000"/>
-              <circle cx="50" cy="74" r="7" fill="#ffffff"/>
+              <circle cx="50" cy="50" r="48" fill="#000000" stroke="#ffffff" strokeWidth="2" />
+              <path d="M50 2 A48 48 0 0 1 50 98 A24 24 0 0 1 50 50 A24 24 0 0 0 50 2" fill="#ffffff" />
+              <circle cx="50" cy="26" r="7" fill="#000000" />
+              <circle cx="50" cy="74" r="7" fill="#ffffff" />
             </svg>
           </div>
           <div className="nav-brand-text">
@@ -76,8 +76,8 @@ export default function Navbar({ soundEnabled, onToggleSound, onNavigate }) {
         <ul className="nav-links">
           {navLinks.map((link) => (
             <li key={link.name} className="nav-item">
-              <a 
-                href={link.href} 
+              <a
+                href={link.href}
                 className={`interactive ${activeSection === link.href.replace('#', '') ? 'active' : ''}`}
                 onClick={(e) => handleLinkClick(e, link.href)}
               >
@@ -88,9 +88,9 @@ export default function Navbar({ soundEnabled, onToggleSound, onNavigate }) {
         </ul>
 
         <div className="nav-actions">
-          <button 
-            id="sound-toggle-btn" 
-            className={`sound-toggle-btn interactive ${soundEnabled ? 'active' : ''}`} 
+          <button
+            id="sound-toggle-btn"
+            className={`sound-toggle-btn interactive ${soundEnabled ? 'active' : ''}`}
             onClick={onToggleSound}
             aria-label={soundEnabled ? 'Mute Sound' : 'Enable Sound'}
             title={soundEnabled ? 'Sound FX Enabled' : 'Sound FX Muted'}
@@ -98,16 +98,16 @@ export default function Navbar({ soundEnabled, onToggleSound, onNavigate }) {
             {soundEnabled ? <Volume2 size={18} /> : <VolumeX size={18} />}
           </button>
 
-          <a 
-            href="#oracle" 
+          <a
+            href="#oracle"
             className="nav-cta-btn interactive"
             onClick={(e) => handleLinkClick(e, '#oracle')}
           >
             Sanctum Terminal
           </a>
 
-          <button 
-            className="mobile-menu-btn interactive" 
+          <button
+            className="mobile-menu-btn interactive"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Menu"
           >
@@ -122,7 +122,7 @@ export default function Navbar({ soundEnabled, onToggleSound, onNavigate }) {
           <ul className="mobile-nav-list">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a 
+                <a
                   href={link.href}
                   className="interactive"
                   onClick={(e) => handleLinkClick(e, link.href)}

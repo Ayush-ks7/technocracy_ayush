@@ -69,8 +69,8 @@ export default function HeroSection({ dualityBalance, onDualityChange, onNavigat
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = this.isYang 
-          ? `rgba(255, 255, 255, ${this.opacity})` 
+        ctx.fillStyle = this.isYang
+          ? `rgba(255, 255, 255, ${this.opacity})`
           : `rgba(40, 44, 58, ${this.opacity * 0.9})`;
 
         if (this.isYang) {
@@ -162,7 +162,7 @@ export default function HeroSection({ dualityBalance, onDualityChange, onNavigat
         </h1>
 
         <p className="hero-subtitle">
-          Welcome to the official portal of <strong>Team Technocracy</strong>, National Institute of Technology Raipur. 
+          Welcome to the official portal of <strong>Team Technocracy</strong>, National Institute of Technology Raipur.
           Where the ancient Taoist balance of <strong>Vigyaan (Science Genesis)</strong> and <strong>Aavartan (Applied Tech Fest)</strong> converges to inspire Central India's finest minds.
         </p>
 
@@ -180,12 +180,12 @@ export default function HeroSection({ dualityBalance, onDualityChange, onNavigat
           </div>
 
           <div className="duality-slider-track">
-            <input 
-              type="range" 
-              id="duality-slider" 
-              className="duality-slider-input interactive" 
-              min="0" 
-              max="100" 
+            <input
+              type="range"
+              id="duality-slider"
+              className="duality-slider-input interactive"
+              min="0"
+              max="100"
               value={dualityBalance}
               onChange={handleSliderChange}
               aria-label="Adjust Vigyaan-Aavartan Duality Balance"
@@ -200,16 +200,16 @@ export default function HeroSection({ dualityBalance, onDualityChange, onNavigat
         </div>
 
         <div className="hero-actions">
-          <a 
-            href="#oracle" 
-            className="btn-primary interactive" 
+          <a
+            href="#oracle"
+            className="btn-primary interactive"
             onClick={(e) => handleNavClick(e, '#oracle')}
           >
             Consult Sanctum Terminal
           </a>
-          <a 
-            href="#bagua-timeline" 
-            className="btn-secondary interactive" 
+          <a
+            href="#bagua-timeline"
+            className="btn-secondary interactive"
             onClick={(e) => handleNavClick(e, '#bagua-timeline')}
           >
             Explore Bagua Timeline
